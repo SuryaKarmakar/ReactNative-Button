@@ -8,9 +8,9 @@
 <Button onPress={() => alert("button")} title="presse me" />
 ```
 
-## Props :
+# Props :
 
-# onPress :
+## onPress :
 
 <p>Handler to be called when the user taps the button.</p>
 
@@ -18,7 +18,7 @@
 <Button onPress={() => alert("button")} title="presse me" color="#f194ff" />
 ```
 
-# title :
+## title :
 
 <p>Text to display inside the button. On Android the given title will be converted to the uppercased form.</p>
 
@@ -26,7 +26,7 @@
 title = "presse me";
 ```
 
-# color :
+## color :
 
 <p>This props change the button color</p>
 
@@ -34,7 +34,7 @@ title = "presse me";
 color = "#f194ff";
 ```
 
-# disabled :
+## disabled :
 
 <p>If true, disable all interactions for this component.it disable the onPress handler</p>
 
