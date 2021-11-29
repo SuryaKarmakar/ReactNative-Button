@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 
-export default function App() {
+const App = () => {
   const [disabled, setDisabled] = useState(true);
   return (
     <View style={styles.container}>
       <View style={styles.body}>
         {/*React native default button*/}
         <Button onPress={() => alert("button")} title="presse me" />
+
         {/*React native custom buttom with color*/}
         <Button
           onPress={() => alert("button")}
@@ -15,6 +16,7 @@ export default function App() {
           color="#f194ff"
         />
       </View>
+
       {/*use disabled props with react hooks*/}
       <View style={styles.body_row}>
         <Button
@@ -30,7 +32,9 @@ export default function App() {
       </View>
     </View>
   );
-}
+};
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {

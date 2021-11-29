@@ -1,8 +1,8 @@
 # React Native Button
 
-## Basic Button :
+## Usage :
 
-<p>A basic button component that should render nicely on any platform. Supports a minimal level of customization.in basic button <b>onPress</b> and <b>title</b> both props are <b>Required</b></p>
+A basic button component that should render nicely on any platform. Supports a minimal level of customization.in basic button <b>onPress</b> and <b>title</b> both props are <b>Required</b>
 
 ```js
 <Button onPress={() => alert("button")} title="presse me" />
@@ -12,31 +12,31 @@
 
 ## onPress :
 
-<p>Handler to be called when the user taps the button.</p>
+Handler to be called when the user taps the button.
+
+```js
+<Button onPress={() => alert("button")} title="presse me" />
+```
+
+## title :
+
+Text to display inside the button. On Android the given title will be converted to the uppercased form.
+
+```js
+<Button onPress={() => alert("button")} title="presse me" />
+```
+
+## color :
+
+This props change the button color.
 
 ```js
 <Button onPress={() => alert("button")} title="presse me" color="#f194ff" />
 ```
 
-## title :
-
-<p>Text to display inside the button. On Android the given title will be converted to the uppercased form.</p>
-
-```js
-title = "presse me";
-```
-
-## color :
-
-<p>This props change the button color</p>
-
-```js
-color = "#f194ff";
-```
-
 ## disabled :
 
-<p>If true, disable all interactions for this component.it disable the onPress handler</p>
+If true, disable all interactions for this component.it disable the onPress handler.
 
 ```js
 const [disabled, setDisabled] = useState(true);
@@ -54,21 +54,4 @@ const [disabled, setDisabled] = useState(true);
   />
 </View>
 ...
-```
-
-## Usage
-
-```
- $ git clone https://github.com/SuryaKarmakar/React-Native-Button.git
- $ cd React-Native-Button
- $ npm install
- $ npm run [web, android, ios]
-
-```
-
-## Run with Expo
-
-```
- $ expo start --[web, android, ios]
-
 ```
